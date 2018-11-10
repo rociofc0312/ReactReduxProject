@@ -1,0 +1,101 @@
+.create-container{
+    margin: 1.5em;
+    padding: 2em;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+.title-container{
+    width: 85%;
+    padding: 0.8rem 0;
+    margin: 0 auto;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #00ADB5;
+}
+.user-form{
+    width: 85%;
+    margin: 0 auto;
+    padding: 2em 3em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #00ADB5;
+}
+.input{
+    font-family: "Helvetica Neue";
+    border-style: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+    display: block;
+    width: 100%;
+    border-bottom: 3px solid #00ADB5;
+    margin-bottom: 1em;
+    outline: none;
+    transition: all .5s ease-in-out;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.input:hover, .input:focus{
+    border-bottom: 3px solid #FFD039;
+}
+.country-selection{
+    display: flex;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    margin-bottom: 1em;
+}
+.country-selection>label{
+    float: left;
+    text-align: left;
+    width: 40%;
+    font-family: "Helvetica Neue";
+    font-size: 0.9rem;
+}
+.country-selection>select{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 60%;
+    float: right;
+    border-bottom: 3px solid #00ADB5;
+    font-family: "Helvetica Neue";
+    font-size: 0.9rem;
+    transition: all .5s ease-in-out;
+}
+.country-selection>select:hover{
+    border-bottom: 3px solid #FFD039;
+}
+.country-selection>select:focus{
+    border-bottom: 3px solid #FFD039;
+}
+.save{
+    outline: none;
+    display: block;
+    width: 100%;
+    font-family: "Helvetica Neue";
+    font-size: 0.9rem;
+    padding: 1rem 1rem;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #42BA78;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.save:hover{
+    background-color: rgb(62, 171, 111);
+}
+
+@media only screen and (max-width: 450px){
+    .create-container{
+        padding: 1em;
+    }
+    .title-container, .user-form{
+        width: unset;
+    }
+    .user-form{
+        padding: 1em;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
